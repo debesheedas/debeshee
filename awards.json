@@ -1,0 +1,32 @@
+[
+  {
+    "title": "President's Gold Medal for Best Academic Performer",
+    "institution": "IIT Tirupati",
+    "description": "Securing 1st rank across all departments in the Bachelor of Technology Program (CGPA 9.85/10.0)",
+    "year": "2019-23"
+  },
+  {
+    "title": "Institute Prize for Best Academic Performer",
+    "institution": "Department of Computer Science",
+    "description": "1st Rank for four consecutive years",
+    "year": "2019-23"
+  },
+  {
+    "title": "Pralhad P. Chhabria Award for Best Outgoing Student",
+    "institution": "IEEE and Hope Foundation",
+    "description": "Awarded to STEM undergraduate female students for professional and academic excellence",
+    "year": "2023"
+  },
+  {
+    "title": "IEEE WISC Premier Scholarship",
+    "institution": "IEEE International Symposium On Women In Services Computing",
+    "description": "Premier Scholarship awarded to only 4 students internationally",
+    "year": "2022"
+  },
+  {
+    "title": "Winner, Coding Championship",
+    "institution": "IBM Research Labs, India",
+    "description": "Amongst all interns at IBM Research Labs, India",
+    "year": "2022"
+  }
+]

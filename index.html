@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debeshee Das | AI Security & Privacy Researcher</title>
+    <meta name="description" content="Debeshee Das - AI Security and Privacy Researcher at ETH Zurich. Specializing in adversarial robustness and privacy-preserving machine learning.">
+    
+    <!-- Material Design 3 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Debeshee Das</span>
+                <span class="brand-subtitle">AI Security & Privacy Researcher</span>
+            </div>
+            
+            <div class="nav-links">
+                <button class="nav-link active" data-section="home">
+                    <span class="material-icons-outlined">home</span>
+                    <span>Home</span>
+                </button>
+                <button class="nav-link" data-section="publications">
+                    <span class="material-icons-outlined">article</span>
+                    <span>Publications</span>
+                </button>
+                <button class="nav-link" data-section="cv" id="cv-nav-link" style="display: none;">
+                    <span class="material-icons-outlined">description</span>
+                    <span>CV</span>
+                </button>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="material-icons-outlined">light_mode</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home/About Section -->
+        <section id="home" class="section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-profile">
+                        <div class="profile-image">
+                            <img src="profile.jpeg" alt="Debeshee Das" class="profile-photo">
+                        </div>
+                        <div class="profile-info">
+                            <p class="profile-subtitle">AI Security & Privacy Researcher</p>
+                            <p class="profile-education">MSc in Computer Science, ETH Zurich</p>
+                            <div class="profile-contact">
+                                <a href="mailto:debeshee.das@example.com" class="contact-item">
+                                    <span class="material-icons-outlined">email</span>
+                                    debeshee.das@example.com
+                                </a>
+                                <a href="https://www.linkedin.com/in/debeshee-das/?originalSubdomain=ch" target="_blank" class="contact-item">
+                                    <span class="material-icons-outlined">work</span>
+                                    LinkedIn
+                                </a>
+                                <a href="https://github.com/debesheedas" target="_blank" class="contact-item">
+                                    <span class="material-icons-outlined">code</span>
+                                    GitHub
+                                </a>
+                                <a href="https://scholar.google.com/citations?hl=en&user=sSPq-ZEAAAAJ" target="_blank" class="contact-item">
+                                    <span class="material-icons-outlined">school</span>
+                                    Google Scholar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-main">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="greeting">Hello, I'm</span>
+                                <span class="name">Debeshee Das</span>
+                            </h1>
+                            <p>
+                                I'm a second-year Master's student in Computer Science at ETH Zurich, specializing in AI safety and security research. 
+                                My work focuses on understanding and mitigating vulnerabilities in foundation models and AI systems, with particular 
+                                emphasis on adversarial robustness and privacy-preserving machine learning.
+                            </p>
+                            <p>
+                                Currently, I'm developing novel defenses against prompt injection attacks on LLM agents at Snyk/Invariant Labs, 
+                                achieving near-perfect protection (99.16% attack reduction) while maintaining system utility. At ETH's SPY Lab, 
+                                I've demonstrated fundamental flaws in membership inference attack evaluations for foundation models, with findings 
+                                published at top-tier venues including IEEE S&P and SaTML.
+                            </p>
+                            <p>
+                                My research bridges theoretical understanding with practical impact—from creating open-source tools like COMEX 
+                                (140+ GitHub stars) for software engineering to developing scalable approaches for cloud incident analysis using 
+                                knowledge graphs and retrieval-augmented LLMs. I'm passionate about ensuring AI systems remain safe, interpretable, 
+                                and beneficial as they become more capable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Research Section -->
+            <div class="research-section">
+                <div class="container">
+                    <div class="research-content">
+                        <div class="research-interests">
+                            <h2>Research Interests</h2>
+                            <div class="interest-items">
+                                <div class="interest-item">
+                                    <span class="material-icons-outlined interest-icon">security</span>
+                                    <span class="interest-text">AI Safety</span>
+                                </div>
+                                <div class="interest-item">
+                                    <span class="material-icons-outlined interest-icon">shield</span>
+                                    <span class="interest-text">Adversarial Robustness</span>
+                                </div>
+                                <div class="interest-item">
+                                    <span class="material-icons-outlined interest-icon">lock</span>
+                                    <span class="interest-text">Privacy-Preserving ML</span>
+                                </div>
+                                <div class="interest-item">
+                                    <span class="material-icons-outlined interest-icon">psychology</span>
+                                    <span class="interest-text">Foundation Models</span>
+                                </div>
+                                <div class="interest-item">
+                                    <span class="material-icons-outlined interest-icon">bug_report</span>
+                                    <span class="interest-text">Prompt Injection Defense</span>
+                                </div>
+                                <div class="interest-item">
+                                    <span class="material-icons-outlined interest-icon">fingerprint</span>
+                                    <span class="interest-text">Membership Inference</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="research-experience">
+                            <h2>Research Experience</h2>
+                            <div class="timeline" id="research-timeline">
+                                <!-- Timeline items will be loaded from JSON -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selected Publications Section -->
+            <div class="selected-publications-section">
+                <div class="container">
+                    <h2 class="section-title">Selected Publications</h2>
+                    <div class="selected-publications-content">
+                        <div class="selected-publications-list" id="selected-publications-list">
+                            <!-- Selected publications will be loaded here -->
+                            <div class="loading-state">
+                                <span class="material-icons-outlined">hourglass_empty</span>
+                                <p>Loading selected publications...</p>
+                            </div>
+                        </div>
+                        <div class="view-all-publications">
+                            <button class="view-all-btn" data-section="publications">
+                                <span class="material-icons-outlined">arrow_forward</span>
+                                View All Publications
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards and Education Section -->
+            <div class="awards-section">
+                <div class="container">
+                    <div class="awards-content">
+                        <div class="education-column">
+                            <h2>Education</h2>
+                            <div class="education-items">
+                                <div class="education-item">
+                                    <h3>MSc in Computer Science</h3>
+                                    <p class="institution">ETH Zurich</p>
+                                    <p class="duration">2023 - Present</p>
+                                    <p class="specialization">Specialization: AI Safety and Security</p>
+                                </div>
+                                
+                                <div class="education-item">
+                                    <h3>B.Tech in Computer Science and Engineering</h3>
+                                    <p class="institution">IIT Tirupati</p>
+                                    <p class="duration">2019 - 2023</p>
+                                    <p class="specialization">CGPA: 9.85/10.0 (1st Rank)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="awards-column">
+                            <h2>Awards and Fellowships</h2>
+                            <div class="awards-list" id="awards-list">
+                                <!-- Awards will be loaded from JSON -->
+                                <div class="loading-state">
+                                    <span class="material-icons-outlined">hourglass_empty</span>
+                                    <p>Loading awards...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="publications-content">
+                    <div class="publications-list" id="publications-list">
+                        <!-- Publications will be loaded here -->
+                        <div class="loading-state">
+                            <span class="material-icons-outlined">hourglass_empty</span>
+                            <p>Loading publications...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section" style="display: none;">
+            <div class="container">
+                <div class="cv-content">
+                    <div class="cv-actions">
+                        <a href="CV.pdf" target="_blank" class="cv-action">
+                            <span class="material-icons-outlined">open_in_new</span>
+                            Open in New Tab
+                        </a>
+                        <a href="CV.pdf" download class="cv-action">
+                            <span class="material-icons-outlined">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                    <div class="cv-viewer">
+                        <iframe 
+                            src="CV.pdf" 
+                            type="application/pdf"
+                            width="100%" 
+                            height="800px"
+                            title="Debeshee Das - Curriculum Vitae">
+                            <p>Your browser doesn't support PDF viewing. <a href="CV.pdf">Download the PDF</a> instead.</p>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Debeshee Das.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

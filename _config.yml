@@ -1,0 +1,61 @@
+# GitHub Pages Configuration
+title: "Debeshee Das | AI Security & Privacy Researcher"
+description: "Personal website of Debeshee Das - AI Security and Privacy Researcher at ETH Zurich"
+author: "Debeshee Das"
+email: "debeshee@ethz.ch"
+url: "https://debesheedas.github.io"
+baseurl: "/debeshee"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+lang: en_US
+twitter:
+  username: debesheedas
+  card: summary_large_image
+
+social:
+  name: Debeshee Das
+  links:
+    - https://www.linkedin.com/in/debeshee-das
+    - https://github.com/debesheedas
+    - https://scholar.google.com/citations?user=sSPq-ZEAAAAJ
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - .DS_Store
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  publications:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Debeshee Das"

@@ -1,0 +1,130 @@
+[
+    {
+      "title": "Blind Baselines Beat Membership Inference Attacks for Foundation Models",
+      "authors": [
+        "Debeshee Das",
+        "Jie Zhang",
+        "Florian Tramèr"
+      ],
+      "venue": [
+        "IEEE Security and Privacy Workshops (SPW)",
+        "2nd Workshop on Navigating and Addressing Data Problems for Foundation Models (DATA-FM @ ICLR 2025)"
+      ],
+      "year": 2025,
+      "location": "San Francisco and Singapore",
+      "pages": "",
+      "doi": "10.1109/SPW67851.2025.00016",
+      "links": {
+        "paper": "https://ieeexplore.ieee.org/abstract/document/11050801",
+        "code": "https://github.com/ethz-spylab/Blind-MIA"
+      },
+      "thumbnail": "article",
+      "thumbnail_image": "images/blind.png",
+      "abstract": "Membership inference (MI) attacks try to determine if a data sample was used to train a machine learning model. For foundation models trained on unknown Web data, MI attacks are often used to detect copyrighted training materials, measure test set contamination, or audit machine unlearning. Unfortunately, we find that evaluations of MI attacks for foundation models are flawed, because they sample members and non-members from different distributions. For 8 pub-lished MI evaluation datasets, we show that blind attacks-that distinguish the member and non-member distributions without looking at any trained model-outperform state-of-the-art MI attacks. Existing evaluations thus tell us nothing about membership leakage of a foundation model's training data.",
+      "keywords": ["membership inference", "privacy", "foundation models", "evaluation"],
+      "selected": true
+    },
+    {
+      "title": "Position: Membership Inference Attacks Cannot Prove That a Model was Trained on Your Data",
+      "authors": [
+        "Debeshee Das",
+        "Sourav Pal",
+        "Florian Tramèr"
+      ],
+      "venue": [
+        "Conference on Machine Learning and Systems (MLSys) Workshop on Secure and Private Machine Learning (SaTML)",
+        "IEEE Security & Privacy Workshops (SPW)"
+      ],
+      "year": 2025,
+      "location": "",
+      "pages": "",
+      "doi": "",
+      "links": {
+        "paper": "https://arxiv.org/abs/2501.09216",
+        "code": ""
+      },
+      "thumbnail": "article",
+      "thumbnail_image": "images/position.png",
+      "thumbnail_padding": 10,
+      "abstract": "We consider the problem of a training data proof, where a data creator or owner wants to demonstrate to a third party that some machine learning model was trained on their data. Training data proofs play a key role in recent lawsuits against foundation models trained on Web-scale data. Many prior works suggest to instantiate training data proofs using membership inference attacks. We argue that this approach is statistically unsound: to provide convincing evidence, the data creator needs to demonstrate that their attack has a low false positive rate, i.e., that the attack's output is unlikely under the null hypothesis that the model was not trained on the target data. Yet, sampling from this null hypothesis is impossible, as we do not know the exact contents of the training set, nor can we (efficiently) retrain a large foundation model. We conclude by offering three paths forward, by showing that membership inference on special canary data, watermarked training data, and data extraction attacks can be used to create sound training data proofs.",
+      "keywords": ["membership inference", "machine learning privacy", "training data proof", "foundation models"],
+      "selected": true
+    },
+    {
+      "title": "COMEX: A Tool for Generating Customized Source Code Representations",
+      "authors": [
+        "Debeshee Das",
+        "Alex Mathai",
+        "Kranthi Sedamaki",
+        "Srikanth Tamilselvam",
+        "Noble Saji Mathews",
+        "Sridhar Chimalakonda",
+        "Atul Kumar"
+      ],
+      "venue": "38th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "year": 2023,
+      "location": "Luxembourg, Luxembourg",
+      "pages": "",
+      "doi": "10.1109/ASE56229.2023.00010",
+      "links": {
+        "paper": "https://ieeexplore.ieee.org/abstract/document/10298568",
+        "code": "https://github.com/IBM/tree-sitter-codeviews"
+      },
+      "banner": ["140+ GitHub Stars", "Open Source"],
+      "thumbnail": "article",
+      "thumbnail_image": "images/comex.png",
+      "thumbnail_padding": 5,
+      "abstract": "Learning effective representations of source code is critical for any Machine Learning for Software Engineering (ML4SE) system. Inspired by natural language processing, large language models (LLMs) like Codex and CodeGen treat code as generic sequences of text and are trained on huge corpora of code data, achieving state of the art performance on several software engineering (SE) tasks. However, valid source code, unlike natural language, follows a strict structure and pattern governed by the underlying grammar of the programming language. Current LLMs do not exploit this property of the source code as they treat code like a sequence of tokens and overlook key structural and semantic properties of code that can be extracted from code-views like the Control Flow Graph (CFG), Data Flow Graph (DFG), Abstract Syntax Tree (AST), etc. Unfortunately, the process of generating and integrating code-views for every programming language is cumbersome and time consuming. To overcome this barrier, we propose our tool COMEX - a framework that allows researchers and developers to create and combine multiple code-views which can be used by machine learning (ML) models for various SE tasks. Some salient features of our tool are: (i) it works directly on source code (which need not be compilable), (ii) it currently supports Java and C#, (iii) it can analyze both method-level snippets and program-level snippets by using both intra-procedural and inter-procedural analysis, and (iv) it is easily extendable to other languages as it is built on tree-sitter - a widely used incremental parser that supports over 40 languages. We believe this easy-to-use code-view generation and customization tool will give impetus to research in source code representation learning methods and ML4SE. The source code and demonstration of our tool can be found at https://github.com/IBM/tree-sitter-codeviews and https://youtu.be/GER6U87FVbU, respectively.",
+      "keywords": ["source code representation learning", "ML4SE", "code-views"],
+      "selected": true
+    },
+    {
+      "title": "Exploring Security Vulnerabilities in Competitive Programming: An Empirical Study",
+      "authors": [
+        "Debeshee Das",
+        "Noble Saji Mathews",
+        "Sridhar Chimalakonda"
+      ],
+      "venue": "Proceedings of the 26th International Conference on Evaluation and Assessment in Software Engineering (EASE)",
+      "year": 2022,
+      "location": "",
+      "pages": "",
+      "doi": "https://doi.org/10.1145/3530019.3530031",
+      "links": {
+        "paper": "https://dl.acm.org/doi/abs/10.1145/3530019.3530031",
+        "code": ""
+      },
+      "thumbnail": "article",
+      "thumbnail_image": "images/exploring.png",
+      "abstract": "Insecure code leading to software vulnerabilities can result in damages of the order of millions of dollars, and in critical systems, the loss of life. Hence, developing secure systems free of exploitable vulnerabilities has been a thrust area of research in recent years. Understanding developers' approach towards vulnerabilities in their code can pave the way for improvements in insecure coding practices. Recent studies have explored online Q&A forums, open-source code repositories, and other code information sources to gain important insights into the pervasiveness of security vulnerabilities. However, to the best of our knowledge, competitive programming (CP) data, a rich source of information about coding practices, has not been explored from the perspective of insecure coding practices. The evaluation and assessment of coding practices used in CP is particularly intriguing because it has become a key player in developer recruitment in recent times. In this paper, we make one of the first attempts to draw the attention of the community to the emergent concern of insecure coding practices in CP. We use static analysis tools to identify the prevalence and nature of vulnerabilities in a large amount of CP data (6.1 million submissions) obtained from a top-rated CP platform, CodeChef, and find that 34.2% of submissions contain vulnerabilities. We observe that many programmers consistently follow insecure coding practices and most of the detected vulnerabilities are characterized by security standards (CWE, CVSS) based on real-world software.",
+      "keywords": ["Software safety", "Software reliability", "Automated static analysis", "Empirical studies"],
+      "selected": false
+    },
+    {
+      "title": "CodeSAM: Source Code Representation Learning by Infusing Self-Attention with Multi-Code-View Graphs",
+      "authors": [
+        "Alex Mathai",
+        "Kranthi Sedamaki",
+        "Debeshee Das",
+        "Noble Saji Mathews",
+        "Srikanth Tamilselvam",
+        "Sridhar Chimalakonda",
+        "Atul Kumar"
+      ],
+      "venue": "",
+      "year": 2024,
+      "location": "",
+      "pages": "",
+      "doi": "https://doi.org/10.48550/arXiv.2411.14611",
+      "links": {
+        "paper": "https://arxiv.org/abs/2411.14611",
+        "code": ""
+      },
+      "thumbnail": "article",
+      "thumbnail_image": "images/codesam.png",
+      "thumbnail_padding": 10,
+      "abstract": "Machine Learning (ML) for software engineering (SE) has gained prominence due to its ability to significantly enhance the performance of various SE applications. This progress is largely attributed to the development of generalizable source code representations that effectively capture the syntactic and semantic characteristics of code. In recent years, pre-trained transformer-based models, inspired by natural language processing (NLP), have shown remarkable success in SE tasks. However, source code contains structural and semantic properties embedded within its grammar, which can be extracted from structured code-views like the Abstract Syntax Tree (AST), Data-Flow Graph (DFG), and Control-Flow Graph (CFG). These code-views can complement NLP techniques, further improving SE tasks. Unfortunately, there are no flexible frameworks to infuse arbitrary code-views into existing transformer-based models effectively. Therefore, in this work, we propose CodeSAM, a novel scalable framework to infuse multiple code-views into transformer-based models by creating self-attention masks. We use CodeSAM to fine-tune a small language model (SLM) like CodeBERT on the downstream SE tasks of semantic code search, code clone detection, and program classification. Experimental results show that by using this technique, we improve downstream performance when compared to SLMs like GraphCodeBERT and CodeBERT on all three tasks by utilizing individual code-views or a combination of code-views during fine-tuning. We believe that these results are indicative that techniques like CodeSAM can help create compact yet performant code SLMs that fit in resource constrained settings.",
+      "keywords": ["ML4SE", "Transformers", "Code-Views", "Source Code Representation Learning"],
+      "selected": false
+    }
+  ]
