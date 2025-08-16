@@ -183,16 +183,19 @@ class ResearcherWebsite {
         }
 
         const publicationsHTML = this.publications.map(pub => this.createPublicationHTML(pub)).join('');
-        publicationsList.innerHTML = publicationsHTML;
+        const authorshipNote = `<p class="authorship-note">* denotes shared first authorship</p>`;
+        publicationsList.innerHTML = publicationsHTML + authorshipNote;
     }
 
     createPublicationHTML(pub) {
         const linksHTML = Object.entries(pub.links || {})
-            .filter(([type, url]) => url && url.trim() !== '' && ['paper', 'code'].includes(type))
+            .filter(([type, url]) => url && url.trim() !== '' && ['paper', 'code', 'poster', 'blog'].includes(type))
             .map(([type, url]) => {
                 const icons = {
                     paper: 'article',
-                    code: 'code'
+                    code: 'code',
+                    poster: 'image',
+                    blog: 'article'
                 };
                 
                 return `
@@ -281,12 +284,14 @@ class ResearcherWebsite {
 
     createSelectedPublicationHTML(pub) {
         const linksHTML = Object.entries(pub.links || {})
-            .filter(([type, url]) => url && url.trim() !== '')
-            .slice(0, 2) // Show only first 2 links for compact display
+            .filter(([type, url]) => url && url.trim() !== '' && ['paper', 'code', 'poster', 'blog'].includes(type))
+            .slice(0, 3) // Show up to 3 links for compact display
             .map(([type, url]) => {
                 const icons = {
                     paper: 'article',
-                    code: 'code'
+                    code: 'code',
+                    poster: 'image',
+                    blog: 'article'
                 };
                 
                 return `
@@ -388,7 +393,7 @@ class ResearcherWebsite {
         const viewAllBtn = document.querySelector('.view-all-btn');
         if (viewAllBtn) {
             viewAllBtn.addEventListener('click', () => {
-                this.showSection('publications');
+                this.navigateToSection('publications');
             });
         }
     }
@@ -458,8 +463,13 @@ class ResearcherWebsite {
                     ${logosContent}
                 </div>
                 <div class="timeline-content">
-                    <h3>${company}</h3>
-                    <p class="position-duration">${position}, ${duration}</p>
+                    <div class="timeline-header">
+                        <div class="timeline-main">
+                            <h3>${company}</h3>
+                            <p class="position">${position}</p>
+                        </div>
+                        <div class="timeline-duration">${duration}</div>
+                    </div>
                     <p class="description">${description}</p>
                 </div>
             </div>

@@ -13,12 +13,12 @@
         "alt": "Invariant Labs"
       }
     ],
-    "description": "Developed a novel instruction-tagger and sanitizer based defence for prompt injection attacks on LLM agents. Evaluations on the Agent Dojo benchmark show an almost perfect defense (reduces Attack Success Rate to only 0.84%) without loss in Utility (and even increases utility in some use cases).",
+    "description": "Developed a novel instruction-tagger and sanitizer based defence for prompt injection attacks on LLM agents. Evaluations on the Agent Dojo benchmark show an almost perfect defense without loss in Utility.",
     "links": []
   },
   {
     "company": "ETH Zurich - SPY Lab",
-    "position": "Research Assistant",
+    "position": "Research Project",
     "duration": "Spring 2024 - Present",
     "logos": [
       {
@@ -26,7 +26,7 @@
         "alt": "ETH Zurich"
       }
     ],
-    "description": "Research Project: Demonstrated fundamental flaws in evaluation of membership inference (MI) privacy attacks on foundation model LLMs using blind attacks that outperform state-of-the-art MI attacks by 51.2%.",
+    "description": "Demonstrated fundamental flaws in evaluation of membership inference (MI) privacy attacks on foundation model LLMs using blind attacks that outperform state-of-the-art MI attacks.",
     "publications": [
       "Publication accepted at Data FM Workshop ICLR '25 and DLSP Workshop IEEE S&P '25: <em>Blind Baselines Beat Membership Inference Attacks for Foundation Models</em>.",
       "Position Paper on MI attacks being incorrectly used for training data proofs: Accepted at IEEE SaTML '25: <em>Membership Inference Attacks Cannot Prove that a Model Was Trained On Your Data</em>"
@@ -45,12 +45,12 @@
         "alt": "Microsoft"
       }
     ],
-    "description": "Developed a novel approach to Cloud Incident Root Cause Analysis using semi-automatic knowledge graph creation and graph-based retrieval augmented LLM pipeline on 200,000 incident data points. Obtained marginal improvements over the state-of-the-art in-context learning LLM based-tool in production.",
+    "description": "Developed a novel approach to Cloud Incident Root Cause Analysis using semi-automatic knowledge graph creation and graph-based retrieval augmented LLM pipeline on 200,000 incident data points.",
     "links": []
   },
   {
     "company": "IBM Research Labs, India",
-    "position": "Summer Research Intern",
+    "position": "Summer Research Intern and Bachelor's Thesis",
     "duration": "Summer 2022 - Spring 2023",
     "logos": [
       {
@@ -58,7 +58,7 @@
         "alt": "IBM Research"
       }
     ],
-    "description": "Bachelor's Thesis: Designed novel code-view infused BERT model that achieves a precision of 96% and beats the state-of-the-art by 1% on multiple automated SE tasks - semantic code search, code clone detection, etc.",
+    "description": "Designed open-source code-view generation tool COMEX that and novel code-view infused BERT model that achieves a precision of 96% and beats the state-of-the-art by 1% on multiple automated SE tasks - semantic code search, code clone detection, etc.",
     "projects": [
       "Built COMEX, an open-source tool with 140+ stars, to generate multi-view graph code-views for ML models for software engineering"
     ],

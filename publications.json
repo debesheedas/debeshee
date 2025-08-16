@@ -16,7 +16,8 @@
       "doi": "10.1109/SPW67851.2025.00016",
       "links": {
         "paper": "https://ieeexplore.ieee.org/abstract/document/11050801",
-        "code": "https://github.com/ethz-spylab/Blind-MIA"
+        "code": "https://github.com/ethz-spylab/Blind-MIA",
+        "poster": "posters/blind.pdf"
       },
       "thumbnail": "article",
       "thumbnail_image": "images/blind.png",
@@ -27,8 +28,9 @@
     {
       "title": "Position: Membership Inference Attacks Cannot Prove That a Model was Trained on Your Data",
       "authors": [
+        "Jie Zhang",
         "Debeshee Das",
-        "Sourav Pal",
+        "Gautam Kamath",
         "Florian Tramèr"
       ],
       "venue": [
@@ -41,7 +43,9 @@
       "doi": "",
       "links": {
         "paper": "https://arxiv.org/abs/2501.09216",
-        "code": ""
+        "code": "",
+        "poster": "posters/position.pdf",
+        "blog": "https://spylab.ai/blog/mia_position/"
       },
       "thumbnail": "article",
       "thumbnail_image": "images/position.png",
@@ -53,11 +57,11 @@
     {
       "title": "COMEX: A Tool for Generating Customized Source Code Representations",
       "authors": [
-        "Debeshee Das",
+        "Debeshee Das*",
+        "Noble Saji Mathews*",
         "Alex Mathai",
-        "Kranthi Sedamaki",
         "Srikanth Tamilselvam",
-        "Noble Saji Mathews",
+        "Kranthi Sedamaki",
         "Sridhar Chimalakonda",
         "Atul Kumar"
       ],
@@ -81,8 +85,8 @@
     {
       "title": "Exploring Security Vulnerabilities in Competitive Programming: An Empirical Study",
       "authors": [
-        "Debeshee Das",
-        "Noble Saji Mathews",
+        "Debeshee Das*",
+        "Noble Saji Mathews*",
         "Sridhar Chimalakonda"
       ],
       "venue": "Proceedings of the 26th International Conference on Evaluation and Assessment in Software Engineering (EASE)",
@@ -103,10 +107,10 @@
     {
       "title": "CodeSAM: Source Code Representation Learning by Infusing Self-Attention with Multi-Code-View Graphs",
       "authors": [
-        "Alex Mathai",
-        "Kranthi Sedamaki",
-        "Debeshee Das",
-        "Noble Saji Mathews",
+        "Alex Mathai*",
+        "Kranthi Sedamaki*",
+        "Debeshee Das*",
+        "Noble Saji Mathews*",
         "Srikanth Tamilselvam",
         "Sridhar Chimalakonda",
         "Atul Kumar"
