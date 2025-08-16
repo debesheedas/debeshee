@@ -28,6 +28,8 @@ class ResearcherWebsite {
                 e.preventDefault();
                 const targetSection = link.getAttribute('data-section');
                 this.navigateToSection(targetSection);
+                // Close mobile menu when navigation link is clicked
+                this.closeMobileMenu();
             });
         });
 
@@ -236,7 +238,7 @@ class ResearcherWebsite {
                     <p class="publication-authors">
                         ${pub.authors.map(author => 
                             author.includes('Debeshee Das') ? 
-                            `<strong>${author}</strong>` : author
+                            `<span class="author-highlight">${author}</span>` : author
                         ).join(', ')}
                     </p>
                     <div class="publication-venue">
@@ -332,7 +334,7 @@ class ResearcherWebsite {
                     <p class="selected-publication-authors">
                         ${pub.authors.map(author => 
                             author.includes('Debeshee Das') ? 
-                            `<strong>${author}</strong>` : author
+                            `<span class="author-highlight">${author}</span>` : author
                         ).join(', ')}
                     </p>
                     <div class="selected-publication-venue">

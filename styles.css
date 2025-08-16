@@ -404,7 +404,7 @@ body {
 
 .hero-text {
   max-width: none;
-  margin-left: var(--spacing-sm);
+  margin-left: var(--spacing-md);
 }
 
 .hero-title {
@@ -636,8 +636,8 @@ body {
 }
 
 .selected-publication-thumbnail {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: var(--color-surface-variant);
   border-radius: var(--radius-md);
   display: flex;
@@ -694,6 +694,11 @@ body {
   font-size: 0.875rem;
   color: var(--color-outline);
   margin-bottom: var(--spacing-xs);
+}
+
+.selected-publication-authors .author-highlight {
+  color: #0d7377;  /* Darker teal for better prominence */
+  font-weight: 700;  /* Bolder font weight */
 }
 
 .selected-publication-venue {
@@ -770,7 +775,7 @@ body {
 
 .research-content {
   display: grid;
-  grid-template-columns: 308px 1fr;
+  grid-template-columns: minmax(280px, 308px) 1fr;
   gap: var(--spacing-4xl);
   align-items: start;
 }
@@ -1091,6 +1096,8 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
 }
 
 .timeline-main {
@@ -1121,6 +1128,7 @@ body {
   white-space: nowrap;
   min-width: fit-content;
   margin-left: var(--spacing-md);
+  flex-shrink: 0;
 }
 
 .timeline-content .description {
@@ -1312,8 +1320,8 @@ body {
 }
 
 .publication-authors .author-highlight {
-  color: var(--color-primary);
-  font-weight: 500;
+  color: #0d7377;  /* Darker teal for better prominence */
+  font-weight: 700;  /* Bolder font weight */
 }
 
 .publication-venue {
@@ -1433,12 +1441,50 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  
   .mobile-menu-toggle {
     display: flex;
+  }
+  
+  /* Mobile navigation dropdown */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-outline-variant);
+    box-shadow: var(--shadow-2);
+    flex-direction: column;
+    gap: 0;
+    padding: var(--spacing-md) 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    z-index: 1000;
+  }
+  
+  .nav-links.mobile-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-link {
+    width: 100%;
+    justify-content: flex-start;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  
+  .nav-link:hover {
+    background-color: var(--color-surface-variant);
+  }
+  
+  .nav-link.active {
+    background-color: var(--color-primary-container);
+    color: var(--color-primary);
   }
   
   .hero-content {
@@ -1458,20 +1504,189 @@ body {
   
   .research-content {
     grid-template-columns: 1fr;
-    gap: var(--spacing-3xl);
+    gap: var(--spacing-2xl);
   }
   
   .research-interests {
-    order: 2;
-    padding: 0 var(--spacing-md);
+    order: 1;
+    padding: 0 var(--spacing-sm) var(--spacing-xl) var(--spacing-sm);
+  }
+  
+  .research-interests h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
   }
   
   .research-experience {
-    order: 1;
+    order: 2;
+  }
+  
+  .research-experience h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  /* Mobile timeline adjustments */
+  .timeline {
+    padding-left: 30px;
+  }
+  
+  .timeline::before {
+    left: 28px;
+    top: 26px;
+  }
+  
+  .timeline-marker {
+    left: -26px;
+    width: 52px;
+    height: 52px;
+  }
+  
+  .company-logo.single {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .company-logo.multiple {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .timeline-item {
+    padding-left: var(--spacing-lg);
+  }
+  
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  
+  .timeline-duration {
+    margin-left: 0;
+    font-size: 0.9rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+  
+  .timeline-content {
+    padding: var(--spacing-md);
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .timeline-content .position {
+    font-size: 0.9rem;
+  }
+  
+  .timeline-content .description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 768px) {
+  .research-content {
+    gap: var(--spacing-xl);
+  }
+  
+  .research-interests {
+    padding: 0;
+  }
+  
+  .research-interests h2,
+  .research-experience h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .interest-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.85rem;
+    justify-content: center;
+  }
+  
+  .interest-icon {
+    font-size: 18px;
+  }
+  
+  .timeline {
+    padding-left: 25px;
+  }
+  
+  .timeline::before {
+    left: 23px;
+  }
+  
+  .timeline-marker {
+    left: -21px;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .company-logo.single {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .company-logo.multiple {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .timeline-item {
+    padding-left: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .timeline-content {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+  
+  .timeline-duration {
+    font-size: 0.8rem;
+    padding: 4px 8px 4px 0;  /* Remove left padding for mobile alignment */
+    margin-left: 0;  /* Remove left margin for mobile alignment */
+  }
+  
+  /* Further reduce publication thumbnails on very small screens */
+  .publication-thumbnail {
+    width: 60px;  /* 60% reduction from 150px */
+    height: 60px;
+  }
+  
+  .publication-thumbnail .material-icons-outlined {
+    font-size: 1.5rem;
+  }
+  
+  .selected-publication-thumbnail {
+    width: 60px;  /* 60% reduction from 150px */
+    height: 60px;
+  }
+  
+  .selected-publication-thumbnail .material-icons-outlined {
+    font-size: 1.5rem;
   }
   
   .interest-items {
     max-width: 100%;
+    gap: var(--spacing-sm);
+  }
+  
+  .interest-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.9rem;
+  }
+  
+  .interest-icon {
+    font-size: 20px;
   }
   
   .about-content {
@@ -1503,6 +1718,7 @@ body {
   
   .award-year {
     align-self: flex-start;
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;  /* Remove left padding for mobile alignment */
   }
   
   .hero-links {
@@ -1521,6 +1737,41 @@ body {
   
   .publication-thumbnail {
     align-self: center;
+    width: 100px;  /* 33% reduction from 150px */
+    height: 100px;
+  }
+  
+  .publication-thumbnail .material-icons-outlined {
+    font-size: 2rem;
+  }
+  
+  /* Stack publication items vertically on mobile */
+  .publication-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+  
+  .publication-thumbnail {
+    align-self: center;
+  }
+  
+  /* Center align publication banners and links on mobile */
+  .publication-banner {
+    justify-content: center;
+  }
+  
+  .publication-links {
+    justify-content: center;
+  }
+  
+  /* Center align selected publication banners and links on mobile */
+  .selected-publication-banner {
+    justify-content: center;
+  }
+  
+  .selected-publication-links {
+    justify-content: center;
   }
   
   .selected-publication-item {
@@ -1530,6 +1781,12 @@ body {
   
   .selected-publication-thumbnail {
     align-self: center;
+    width: 100px;  /* 33% reduction from 150px */
+    height: 100px;
+  }
+  
+  .selected-publication-thumbnail .material-icons-outlined {
+    font-size: 2rem;
   }
 }
 
